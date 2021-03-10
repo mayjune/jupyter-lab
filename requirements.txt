@@ -1,0 +1,9 @@
+altair
+fasttext
+faiss-cpu
+jmespath
+sentencepiece
+icecream
+spacy
+rank-bm25
+gensim

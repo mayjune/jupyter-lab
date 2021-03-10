@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  jupyter:
+    restart: always
+    build: ./
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/ubuntu/notebooks
+      - ./config/jupyter_notebook_config.py:/home/ubuntu/.jupyter/jupyter_notebook_config.py
+    command: jupyter lab
